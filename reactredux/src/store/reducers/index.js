@@ -2,6 +2,6 @@ import { combineReducers } from "redux";
 
 import course from "./course";
 
-export default combineRedurcers({
+export default combineReducers({
   course,
 });
