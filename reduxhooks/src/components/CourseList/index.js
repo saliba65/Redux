@@ -6,7 +6,10 @@ function addCourseAction(title) {
 }
 
 export default function CourseList() {
-  const courses = useSelector((state) => state.data);
+  const qty = 4;
+
+  const courses = useSelector((state) => state.data.slice(0, qty), [qty]);
+
   const dispach = useDispatch();
 
   function addCourse() {
